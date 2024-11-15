@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid practice - Collage</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(7,1fr);
+        }
+        .item img{
+            width:100%;
+            height:100%;
+        }
+        .item1{
+            grid-row:1/3;
+        }
+        .item2{
+            grid-row:3/5;
+        }
+        .item3{
+            grid-row:5/7;
+        }
+        .item4{
+            grid-column:2/3;
+            grid-row:1/4;
+        }
+        .item5{
+            grid-column:2/3;
+            grid-row:4/7;
+        }
+        .item6{
+            grid-column:3/4;
+            grid-row:1/3;
+        }
+        .item7{
+            grid-column:3/4;
+            grid-row:3/5;
+        }
+        .item8{
+            grid-column:3/4;
+            grid-row:5/7;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+    <div class="item item1"><img src="7.png" alt="first image"></div>
+    <div class="item item2"><img src="8.png" alt="second image"></div>
+    <div class="item item3"><img src="9.png" alt="third image"></div>
+    <div class="item item4"><img src="10.png" alt="fourth image"></div>
+    <div class="item item5"><img src="11.png" alt="fifth image"></div>
+    <div class="item item6"><img src="12.png" alt="sixth image"></div>
+    <div class="item item7"><img src="13.png" alt="seventh image"></div>
+    <div class="item item8"><img src="14.png" alt="eight image"></div>
+</div>
+</body>
+</html>
